@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-jua {
+  font-family: 'Jua', 'Noto Sans KR', cursive, sans-serif;
+}
+
+/* Accessible focus ring for switch and keyboard access */
+*:focus-visible {
+  outline: 4px solid #3B82F6;
+  outline-offset: 4px;
+}
+
+/* Tactile bouncy button effect */
+.touch-card {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.touch-card:active {
+  transform: scale(0.94);
+}
+
